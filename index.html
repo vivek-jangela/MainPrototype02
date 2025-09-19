@@ -1,0 +1,55 @@
+ - <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up & Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+  <div class="container" id="signup-container">
+    <h2>Sign Up</h2>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" id="signup-name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label>Email or Phone</label>
+      <input type="text" id="signup-contact" placeholder="Enter email or phone">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="signup-password" placeholder="Enter password">
+    </div>
+    <button onclick="sendOTP()">Sign Up</button>
+
+    <div class="otp-section" id="otp-section">
+      <label>Enter OTP</label>
+      <input type="text" id="otp-input" placeholder="Enter OTP">
+      <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+    <div class="toggle-link" onclick="showLogin()">Already have an account? Login</div>
+  </div>
+
+  <div class="container" id="login-container" style="display:none;">
+    <h2>Login</h2>
+    <div class="form-group">
+      <label>Email or Phone</label>
+      <input type="text" id="login-contact" placeholder="Enter email or phone">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="login-password" placeholder="Enter password">
+    </div>
+    <button onclick="loginUser()">Login</button>
+
+    <div class="toggle-link" onclick="showSignup()">Don't have an account? Sign Up</div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+

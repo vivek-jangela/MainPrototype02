@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body {
+  font-family: Arial, sans-serif;
+  background: #8e8efa;  
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 350px;
+  background:#fff;
+  
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.toggle-link {
+   text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.otp-section {
+  display: none;
+  margin-top: 15px;
+} 
+
+
+#page1{
+  width: 100%;
+  height: 100%;
+  background-color: #a0a0cc;
+}
+.top-bar {
+  width: 100%;
+  padding: 10px 20px;
+  background: #80b8f0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  background: #fbf8f8;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.search-icon {
+  margin-left: 5px;
+  color: #040405;
+  cursor: pointer;
+}
+
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -30%; 
+  width: 20%;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background: #f4f4f4;
+}
+
+.sidebar.active {
+  right: 0;
+}
+.slide-img{
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+
+
+}
+#profile-pic-slidebar{
+  width: 100%;
+  height: 100%;
+    border-radius: 50%;
+
+}
+.option{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+
+}
+.name{
+  position: absolute;
+  left: 43%;
+
+}
+.content {
+  text-align: center;
+  padding: 50px;
+}
+  
+
+
+
+
+/* START: AYU-Sync Tool Styles */
+.content-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: #1a2533;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.results-container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  min-height: 50px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+  color: #333;
+}
+
+.result-item {
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item strong {
+  color: #007bff;
+}
+
+pre {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.message {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+}
+/* END: AYU-Sync Tool Styles */
